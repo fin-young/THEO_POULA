@@ -29,7 +29,9 @@ class THEOPOULA(Optimizer):
             if eta > 0:
                 for p in group['params']:
                     pnorm += torch.sum(torch.pow(p.data, exponent=2))
-            r = group['r']
+
+                r = group['r']
+                total_norm = torch.pow(pnorm, r)
 
             for p in group['params']:
                 if p.grad is None:
@@ -47,6 +49,12 @@ class THEOPOULA(Optimizer):
                 denom = 1 + math.sqrt(lr) * torch.abs(grad)
 
                 p.data.addcdiv_(value=-lr, tensor1=numer, tensor2=denom).add_(noise)
+
+                if eta > 0:
+                    reg_num = eta * p * total_norm
+                    reg_denom = 1 + math.sqrt(lr) * total_norm
+                    reg = reg_num/reg_denom
+                    p.data.add_(reg)
 
         return loss
 
