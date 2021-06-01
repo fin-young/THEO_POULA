@@ -55,7 +55,7 @@ Our model achieves the following performance on :
 
 | Optimizer   | test loss  |               hyper-parameters                    |
 | ------------|----------- | ------------------------------------------------- |
-| THEOPOULA   |     0.0197 |  $(\lambda, \epsilon, \beta) = (1e-2, 1e-4, 1e14)$|
+| THEOPOULA   |     0.0197 |  $\lambda$ $(\lambda, \epsilon, \beta) = (1e-2, 1e-4, 1e14)$|
 
 
 
