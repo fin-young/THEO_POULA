@@ -33,23 +33,13 @@ python train_lstm.py --lr 1e-3 --optimizer_name='RMSProp'
 
 ### DNN (Insurance claim)
 ```train
-!python train_gammareg.py --lr 5e-4 --eps 1e-2 --beta 1e10 --optimizer_name='THEOPOULA' --epochs=300 
-!python train_gammareg.py --lr 1e-4 --optimizer_name='ADAM' --epochs=300 
-!python train_gammareg.py --lr 5e-3 --optimizer_name='AMSGrad' --epochs=300 
-!python train_gammareg.py --lr 1e-4 --optimizer_name='RMSProp' --epochs=300 
-'''
-
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
-
-## Training
-
-To train the model(s) in the paper, run this command:
-
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python train_gammareg.py --lr 5e-4 --eps 1e-2 --beta 1e10 --optimizer_name='THEOPOULA' --epochs=300 
+python train_gammareg.py --lr 1e-4 --optimizer_name='ADAM' --epochs=300 
+python train_gammareg.py --lr 5e-3 --optimizer_name='AMSGrad' --epochs=300 
+python train_gammareg.py --lr 1e-4 --optimizer_name='RMSProp' --epochs=300 
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+Trained models are saved in `./ckpt_{model_name}/{experiment_name}/{experment_name}.pth'. Log files and a dataframe for training and test losses are saved in  './log_{model_name}/{experiment_name}/{log_name}' and './log_{model_name}/{experiment_name}/history.pkl'. 
 
 ## Evaluation
 
