@@ -39,7 +39,8 @@ python train_gammareg.py --lr 5e-3 --optimizer_name='AMSGrad' --epochs=300
 python train_gammareg.py --lr 1e-4 --optimizer_name='RMSProp' --epochs=300 
 ```
 
-Trained models are saved in `./ckpt_{model_name}/{experiment_name}/{experment_name}.pth'. Log files and a dataframe for training and test losses are saved in  './log_{model_name}/{experiment_name}/{log_name}' and './log_{model_name}/{experiment_name}/history.pkl'. 
+Note that trained models are saved in "./ckpt_{model_name}/{experiment_name}/{experment_name}.pth". 
+Log files and a dataframe for training and test losses are saved in  "./log_{model_name}/{experiment_name}/{log_name}" and "./log_{model_name}/{experiment_name}/history.pkl". 
 
 ## Evaluation
 
