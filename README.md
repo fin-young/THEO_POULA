@@ -53,9 +53,9 @@ Our model achieves the following performance on :
 
 ### CIFAR10
 
-| Optimizer   | test loss  |               hyper-parameters                    |
-| ------------|----------- | ------------------------------------------------- |
-| THEOPOULA   |     0.0197 |  $(λ, ε, β) = (1e-2, 1e-4, 1e14)$|
+| Optimizer   | test loss  |         hyper-parameters         |
+| ------------|----------- | ---------------------------------|
+| THEOPOULA   |     0.0197 |   (λ, ε, β) = (1e-2, 1e-4, 1e14) |                
 
 
 
