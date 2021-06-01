@@ -51,14 +51,34 @@ To evaluate and plot the models, run "plots_cifar.py", "plots_lstm.py", "plots_s
 
 Our model achieves the following performance on :
 
-### CIFAR10
+### CNN
 
-| Optimizer   | test loss  |         hyper-parameters            |
+| Optimizer   | test loss  |         best hyper-parameters       |
 | ------------|----------- | ------------------------------------|
 | THEOPOULA   |     0.0198 |   (λ, ε, β) = (1e-2, 1e-4, 1e14)    |                
 | ADAM        |     0.0226 |  (λ, β_1, β_2) = (1e-2, 0.9, 0.999) |                
 | AMSGRAD     |     0.0203 |  (λ, β_1, β_2) = (1e-3, 0.9, 0.999) |                
 | RMSPROP     |     0.0218 |   (λ, β_2) = (1e-2, 0.99)           |                
+
+### LSTM
+
+| Optimizer   | test loss  |         best hyper-parameters       |
+| ------------|----------- | ------------------------------------|
+| THEOPOULA   |     4.537  |   (λ, ε, β) = (5e-1, 1e-1, 1e14)    |                
+| ADAM        |     4.635  |  (λ, β_1, β_2) = (1e-3, 0.9, 0.999) |                
+| AMSGRAD     |     4.587  |  (λ, β_1, β_2) = (5e-4, 0.9, 0.999) |                
+| RMSPROP     |     4.689  |   (λ, β_2) = (1e-3, 0.99)           |                
+
+### DNN
+
+| Optimizer   | test loss  |         best hyper-parameters       |
+| ------------|----------- | ------------------------------------|
+| THEOPOULA   |     8.591  |   (λ, ε, β) = (5e-4, 1e-2, 1e14)    |                
+| ADAM        |     8.605  |  (λ, β_1, β_2) = (1e-4, 0.9, 0.999) |                
+| AMSGRAD     |     8.626  |  (λ, β_1, β_2) = (5e-3, 0.9, 0.999) |                
+| RMSPROP     |     8.597  |   (λ, β_2) = (1e-4, 0.99)           |    
+
+
 
 
 
