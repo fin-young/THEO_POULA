@@ -3,16 +3,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-path = './log_gammareg/best/ADAM_bs{128}_hs{50}_lr{1.0e-04}_epoch{300}_eta{0.0e+00}_beta{1.0e+10}_eps{1.0e-02}/history.pkl'
+path = './log_gammareg/best/ADAM_bs{128}_hs{50}_lr{1.0e-04}/history.pkl'
 df_adam = pkl.load(open(path, 'rb'))
 
-path = './log_gammareg/best/AMSGrad_bs{128}_hs{50}_lr{5.0e-03}_epoch{300}_eta{0.0e+00}_beta{1.0e+10}_eps{1.0e-02}/history.pkl'
+path = './log_gammareg/best/AMSGrad_bs{128}_hs{50}_lr{5.0e-03}/history.pkl'
 df_ams = pkl.load(open(path, 'rb'))
 
-path = './log_gammareg/best/RMSProp_bs{128}_hs{50}_lr{1.0e-04}_epoch{300}_eta{0.0e+00}_beta{1.0e+10}_eps{1.0e-02}/history.pkl'
+path = './log_gammareg/best/RMSProp_bs{128}_hs{50}_lr{1.0e-04}/history.pkl'
 df_rms = pkl.load(open(path, 'rb'))
 
-path = './log_gammareg/best/THEOPOULA_bs{128}_hs{50}_lr{5.0e-04}_epoch{300}_eta{0.0e+00}_beta{1.0e+10}_eps{1.0e-02}/history.pkl'
+path = './log_gammareg/best/THEOPOULA_bs{128}_hs{50}_lr{5.0e-04}_beta{1.0e+10}_eps{1.0e-02}/history.pkl'
 df_theopoula = pkl.load(open(path, 'rb'))
 
 

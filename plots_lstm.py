@@ -6,16 +6,16 @@ import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 
-path = './log_ptb/best/AMSGrad_bs{20}_hs{300}_lr{5.0e-04}_epoch{100}_beta{1.0e+10}_r{5}_eps{1.0e-01}/history.pkl'
+path = './log_ptb/best/AMSGrad_bs{20}_hs{300}_lr{5.0e-04}/history.pkl'
 df_amsgrad = pkl.load(open(path, 'rb'))
 
-path = './log_ptb/best/ADAM_bs{20}_hs{300}_lr{1.0e-03}_epoch{100}_beta{1.0e+10}_r{5}_eps{1.0e-01}/history.pkl'
+path = './log_ptb/best/ADAM_bs{20}_hs{300}_lr{1.0e-03}/history.pkl'
 df_adam = pkl.load(open(path, 'rb'))
 
-path = './log_ptb/best/RMSProp_bs{20}_hs{300}_lr{1.0e-03}_epoch{100}_beta{1.0e+10}_r{5}_eps{1.0e-01}/history.pkl'
+path = './log_ptb/best/RMSProp_bs{20}_hs{300}_lr{1.0e-03}/history.pkl'
 df_rms = pkl.load(open(path, 'rb'))
 
-path = './log_ptb/best/THEOPOULA_bs{20}_hs{300}_lr{5.0e-01}_epoch{100}_beta{1.0e+10}_r{5}_eps{1.0e-01}/history.pkl'
+path = './log_ptb/best/THEOPOULA_bs{20}_hs{300}_lr{5.0e-01}_beta{1.0e+10}_eps{1.0e-01}/history.pkl'
 df_theopoula = pkl.load(open(path, 'rb'))
 
 
