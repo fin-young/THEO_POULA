@@ -42,37 +42,21 @@ python train_gammareg.py --lr 1e-4 --optimizer_name='RMSProp' --epochs=300
 Note that trained models are saved in "./ckpt_{model_name}/{experiment_name}/{experment_name}.pth". 
 Log files and a dataframe for training and test losses are saved in  "./log_{model_name}/{experiment_name}/{log_name}" and "./log_{model_name}/{experiment_name}/history.pkl". 
 
-## Evaluation
+## Evaluation and Plot
 
-To evaluate my model on ImageNet, run:
+To evaluate and plot the models, run "plots_cifar.py", "plots_lstm.py", "plots_smodel.py". Note that you need to specify paths of log files you are interested in. 
 
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
 
 Our model achieves the following performance on :
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+### CIFAR10
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+| Optimizer   | test loss  |               hyper-parameters                    |
+| ------------|----------- | ------------------------------------------------- |
+| THEOPOULA   |     0.0197 |  $(\lambda, \epsilon, \beta) = (1e-2, 1e-4, 1e14)$|
 
 
-## Contributing
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+
